@@ -16,7 +16,6 @@ if(process.env.NODE_ENV === 'production'){
         res.sendFile(path.join(__dirname, 'build', 'index.html'));//// relative path
     } );
 }
-
 app.get('/', function (req, res) {
   res.send('Ths app is up and running');
 });
